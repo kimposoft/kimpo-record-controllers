@@ -1,0 +1,10 @@
+{
+  "extract.public_schema.raw_node_retired": "Free-form expressions (kind=raw) are retired; reconfigure this action with a structured expression",
+  "extract.public_schema.inline_post_sort_retired": "Inline post-sort is retired; use a separate sort action",
+  "extract.public_schema.take_v1_retired": "The take-v1 selector is retired; use the extract node limit/order_by to limit rows",
+  "extract.public_schema.kimpo_sql_retired": "The legacy KimpoSQL shape is retired; use a structured expression",
+  "extract.public_schema.expression_legacy_retired": "The legacy extraction configuration (V3.4 expression) is retired; please reconfigure this extraction node in the action designer",
+  "extract.host_handled_only": "Data extraction is now executed entirely by the host; this plugin should not be invoked directly. If you see this error, please contact an administrator to check the execution routing",
+  "extract.validate.extract_v4_schema_version_mismatch": "The extraction node document version does not match; reconfigure it in the designer and save again",
+  "extract.validate.extract_v4_plans_shape_invalid": "extract_v4_plans has an invalid shape (expected an array of objects); republish this template version"
+}

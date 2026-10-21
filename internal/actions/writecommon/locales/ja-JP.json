@@ -1,0 +1,13 @@
+{
+  "write.common.mutation_ticket_required": "この書き込みアクションにはホストのデータセマンティクスサービスが発行した書き込みチケットが必要ですが、有効な alice_mutation_ticket を受信していません",
+  "write.common.no_host": "書き込みアクションはホストのデータセマンティクスサービス経由で実行される必要がありますが、host.Alice() ハンドルが注入されていません",
+  "write.common.apply_failed": "書き込みに失敗しました:ホストが今回の書き込みチケットを受け付けませんでした（{reason}）",
+  "write.common.fence_rejected": "対象レコードはフォームセッションによって占有されているため、今回の書き込みはバッチ全体が拒否されました。該当レコードの編集ページを閉じてから再試行してください",
+  "write.common.failed": "書き込みに失敗しました。ホストが返したステータス: {status}",
+  "write.common.bad_params.operation_mismatch": "書き込み設定の操作 \"{got}\" が本アクション \"{want}\" と一致しません",
+  "write.create.max_affected_rows_out_of_range": "行数しきい値 (max_affected_rows) は 0 以上の整数である必要があります（0 または空欄は無制限）",
+  "write.update.max_affected_rows_out_of_range": "行数しきい値 (max_affected_rows) は 0 以上の整数である必要があります（0 または空欄は無制限）",
+  "write.delete.max_affected_rows_out_of_range": "行数しきい値 (max_affected_rows) は 0 以上の整数である必要があります（0 または空欄は無制限）",
+  "write.common.bad_params.write_v4_missing": "V4 書き込み設定がありません（旧設定は廃止されました。再設定してください）",
+  "write.common.validate.legacy_retired": "書き込みアクションの旧設定（expression）は廃止されました。書き込みルールを再設定してください"
+}

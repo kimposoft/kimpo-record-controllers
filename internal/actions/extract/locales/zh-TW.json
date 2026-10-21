@@ -1,0 +1,10 @@
+{
+  "extract.public_schema.raw_node_retired": "自由文字運算式（kind=raw）已退役，請重新設定為結構化運算式",
+  "extract.public_schema.inline_post_sort_retired": "內嵌執行後排序已退役，請改用獨立排序動作",
+  "extract.public_schema.take_v1_retired": "take-v1 舊選擇器已退役；限制列數請使用取數節點的 limit/order_by",
+  "extract.public_schema.kimpo_sql_retired": "舊 KimpoSQL 形狀已退役，請改用結構化運算式",
+  "extract.public_schema.expression_legacy_retired": "舊格式取數設定（V3.4 運算式）已停用，請在動作設計器中重新設定本取數節點",
+  "extract.host_handled_only": "取數已改由宿主統一執行，本外掛不應被直接呼叫；如看到此錯誤，請聯絡管理員檢查執行路由",
+  "extract.validate.extract_v4_schema_version_mismatch": "取數節點文件版本不符，請在設計器中重新設定後儲存",
+  "extract.validate.extract_v4_plans_shape_invalid": "extract_v4_plans 格式不正確（應為物件陣列），請重新發佈該範本版本"
+}

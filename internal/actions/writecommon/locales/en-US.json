@@ -1,0 +1,13 @@
+{
+  "write.common.mutation_ticket_required": "This write action requires a mutation ticket issued by the host data service; no valid alice_mutation_ticket was received",
+  "write.common.no_host": "Write actions must run through the host data service, but no host.Alice() handle was injected",
+  "write.common.apply_failed": "Write failed: the host did not accept this write ticket ({reason})",
+  "write.common.fence_rejected": "The target record is held by an open form session; this write was rejected as a whole batch. Please close that record's edit page and retry.",
+  "write.common.failed": "Write failed; the host returned status {status}",
+  "write.common.bad_params.operation_mismatch": "Write configuration operation \"{got}\" does not match this action \"{want}\"",
+  "write.create.max_affected_rows_out_of_range": "The row limit (max_affected_rows) must be an integer >= 0 (0 or empty means no limit)",
+  "write.update.max_affected_rows_out_of_range": "The row limit (max_affected_rows) must be an integer >= 0 (0 or empty means no limit)",
+  "write.delete.max_affected_rows_out_of_range": "The row limit (max_affected_rows) must be an integer >= 0 (0 or empty means no limit)",
+  "write.common.bad_params.write_v4_missing": "Missing V4 write configuration (the legacy configuration has been retired; please reconfigure)",
+  "write.common.validate.legacy_retired": "The legacy write configuration (expression) has been retired; please reconfigure this node"
+}

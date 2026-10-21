@@ -1,0 +1,140 @@
+{
+  "plugin_id": "com.kimposoft.recordcontrollers",
+  "name": {
+    "zh_CN": "数据动作",
+    "en_US": "Record Controllers"
+  },
+  "version": "1.0.1",
+  "sdk_version": "1.1.0-tp.20",
+  "kimpo_version": ">=1.0.0",
+  "category": "action",
+  "author": {
+    "name": "KimpoSoft Team"
+  },
+  "description": {
+    "zh_CN": "提供取数、新增、修改、删除与明细排序五个数据动作，让业务数据的处理步骤清晰可控。",
+    "en_US": "Data actions for fetching, creating, updating and deleting records, and for sorting detail rows."
+  },
+  "entry": {
+    "backend": "plugin.bin",
+    "frontend": "frontend/plugin.umd.js"
+  },
+  "config_schema": "schema/config.schema.json",
+  "i18n": {
+    "namespace": "com.kimposoft.recordcontrollers",
+    "locales": ["zh-CN", "zh-TW", "en-US", "ja-JP"],
+    "path": "frontend/locales",
+    "default_locale": "zh-CN"
+  },
+  "process": {
+    "memory_limit_mb": 0
+  },
+  "trust_level": "trusted",
+  "dependencies": {
+    "platform": ">=1.0.0",
+    "plugins": []
+  },
+  "permissions": {
+    "network": [],
+    "storage": false,
+    "exec": false
+  },
+  "api_scope": {
+    "allowed_rpcs": [
+      "kimpo.plugins.host.v1.AliceDataService/ApplyChangeSet",
+      "kimpo.plugins.host.v1.MirrorService/ReadTable",
+      "kimpo.plugins.host.v1.MirrorService/ReorderDetailRows",
+      "kimpo.plugins.host.v1.LogService/Write",
+      "kimpo.plugins.host.v1.LogService/WriteBatch"
+    ]
+  },
+  "data_access": {
+    "allowed_models": ["record"],
+    "tenant_scoped": true,
+    "fields": {"record": ["*"]}
+  },
+  "lifecycle": {
+    "allow_multiple_config_instances": true,
+    "max_config_instances": 8
+  },
+  "capabilities": {
+    "runtime_kinds": [
+      "action"
+    ],
+    "directions": [
+      "biz"
+    ],
+    "backend_services": [
+      "kimpo-record-controllers"
+    ],
+    "data_actions": [
+      { "action": "data.extract_record", "operation_kind": "fetch" },
+      { "action": "data.create_record", "operation_kind": "create" },
+      { "action": "data.update_record", "operation_kind": "update" },
+      { "action": "data.delete_record", "operation_kind": "delete" }
+    ],
+    "frontend": {
+      "global_name": "KimpoPlugins.extraction",
+      "bundle": "frontend/plugin.umd.js",
+      "surfaces": [
+        {
+          "type": "action-config",
+          "bind": "data.extract_record",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        },
+        {
+          "type": "action-config",
+          "bind": "data.create_record",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        },
+        {
+          "type": "action-config",
+          "bind": "data.update_record",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        },
+        {
+          "type": "action-config",
+          "bind": "data.delete_record",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        },
+        {
+          "type": "action-config",
+          "bind": "operation_kind:fetch",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        },
+        {
+          "type": "action-config",
+          "bind": "operation_kind:create",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        },
+        {
+          "type": "action-config",
+          "bind": "operation_kind:update",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        },
+        {
+          "type": "action-config",
+          "bind": "operation_kind:delete",
+          "priority": 0,
+          "host_caps": ["platform.interactiveSession", "request", "message", "domain:expression", "domain:alice-v4", "i18n", "log"]
+        }
+      ],
+      "routes": []
+    }
+  },
+  "schema_compatibility": {
+    "frontend.interactive-session": { "min_version": 1 },
+    "frontend.surface": { "min_version": 1 },
+    "host.alice": { "min_version": 1 },
+    "host.mirror": { "min_version": 1 },
+    "system.lifecycle": { "min_version": 1 },
+    "system.log": { "min_version": 1 }
+  }
+}

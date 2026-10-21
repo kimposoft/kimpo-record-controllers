@@ -1,0 +1,10 @@
+{
+  "extract.public_schema.raw_node_retired": "自由文本表达式（kind=raw）已退役，请重新配置为结构化表达式",
+  "extract.public_schema.inline_post_sort_retired": "内联执行后排序已退役，请改用独立排序动作",
+  "extract.public_schema.take_v1_retired": "take-v1 旧选择器已退役；限制行数请使用取数节点的 limit/order_by",
+  "extract.public_schema.kimpo_sql_retired": "旧 KimpoSQL 形状已退役，请改用结构化表达式",
+  "extract.public_schema.expression_legacy_retired": "旧格式取数配置（V3.4 表达式）已停用，请在动作设计器中重新配置本取数节点",
+  "extract.host_handled_only": "取数已改由宿主统一执行，本插件不应被直接调用；如看到此错误，请联系管理员核查执行路由",
+  "extract.validate.extract_v4_schema_version_mismatch": "取数节点文档版本不匹配，请在设计器中重新配置后保存",
+  "extract.validate.extract_v4_plans_shape_invalid": "extract_v4_plans 格式不正确（应为对象数组），请重新发布该模板版本"
+}

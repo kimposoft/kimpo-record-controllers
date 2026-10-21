@@ -1,0 +1,41 @@
+{
+  "code": "record_actions",
+  "name": {
+    "zh-CN": "记录动作·明细排序",
+    "zh-TW": "記錄動作·明細排序",
+    "en-US": "Record Actions: Detail Sort",
+    "ja-JP": "レコードアクション：明細ソート"
+  },
+  "summary": {
+    "zh-CN": "填报态下按字段值重新排列明细表行序的动作节点。",
+    "zh-TW": "填報態下按欄位值重新排列明細表行序的動作節點。",
+    "en-US": "An action node that reorders detail-table rows by field values while filling out a form.",
+    "ja-JP": "入力中に明細表の行をフィールド値で並べ替えるアクションノード。"
+  },
+  "capabilities": [
+    {
+      "code": "detail_row_sort",
+      "name": {
+        "zh-CN": "明细排序",
+        "zh-TW": "明細排序",
+        "en-US": "Sort detail rows",
+        "ja-JP": "明細行ソート"
+      },
+      "summary": {
+        "zh-CN": "按一个或多个字段对当前单据某张明细表的行做物理重排，可分别设置升序或降序。",
+        "zh-TW": "按一個或多個欄位對當前單據某張明細表的行做物理重排，可分別設置升序或降序。",
+        "en-US": "Physically reorders a detail table's rows by one or more fields, each ascending or descending.",
+        "ja-JP": "1つ以上のフィールドを基準に、指定の明細表の行を昇順/降順で物理的に並べ替える。"
+      },
+      "intents": ["明细排序", "行排序", "按字段排序", "重排明细", "自动排序"],
+      "category": "design",
+      "contracts": [],
+      "capability_full_name": "",
+      "boundary_points": [
+        "一次只能排序一张明细表，不支持跨表联合排序",
+        "排序会物理改变行的先后位置，依赖原始录入顺序时慎用",
+        "只重排已有行，不新增、不删除、不改字段值"
+      ]
+    }
+  ]
+}

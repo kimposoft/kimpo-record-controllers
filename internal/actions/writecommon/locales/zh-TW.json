@@ -1,0 +1,13 @@
+{
+  "write.common.mutation_ticket_required": "寫入動作需要宿主資料語義服務簽發的寫入令牌，目前未收到有效 alice_mutation_ticket",
+  "write.common.no_host": "寫入動作需經宿主資料語義服務執行，但未注入 host.Alice() 控制代碼",
+  "write.common.apply_failed": "寫入失敗：宿主未接受本次寫入令牌（{reason}）",
+  "write.common.fence_rejected": "目標記錄正被表單工作階段佔用，本次寫入已整批拒絕；請關閉該記錄的編輯頁後重試",
+  "write.common.failed": "寫入失敗，宿主回傳狀態 {status}",
+  "write.common.bad_params.operation_mismatch": "寫入設定操作 \"{got}\" 與本動作 \"{want}\" 不符",
+  "write.create.max_affected_rows_out_of_range": "行數閾值 max_affected_rows 必須是 ≥0 的整數（0 或留空表示不限制）",
+  "write.update.max_affected_rows_out_of_range": "行數閾值 max_affected_rows 必須是 ≥0 的整數（0 或留空表示不限制）",
+  "write.delete.max_affected_rows_out_of_range": "行數閾值 max_affected_rows 必須是 ≥0 的整數（0 或留空表示不限制）",
+  "write.common.bad_params.write_v4_missing": "缺少 V4 寫入設定（舊設定已退役，請重新設定）",
+  "write.common.validate.legacy_retired": "寫入動作舊設定（expression）已退役，請重新設定寫入規則"
+}

@@ -1,0 +1,11 @@
+# 构建产物与本地依赖（均可由 build.sh 重新生成）
+/plugin.bin
+/release/
+*.kpp
+frontend/node_modules/
+frontend/dist/
+
+# 插件运行时在本地产生的数据
+/data
+
+.DS_Store

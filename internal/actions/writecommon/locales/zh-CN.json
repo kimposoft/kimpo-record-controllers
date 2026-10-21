@@ -1,0 +1,13 @@
+{
+  "write.common.mutation_ticket_required": "写入动作需要宿主数据语义服务签发的写入令牌，当前未收到有效 alice_mutation_ticket",
+  "write.common.no_host": "写动作需经宿主数据语义服务执行，但未注入 host.Alice() 句柄",
+  "write.common.apply_failed": "写入失败：宿主未接受本次写入令牌（{reason}）",
+  "write.common.fence_rejected": "目标记录正被表单会话占用，本次写入已整批拒绝；请关闭该记录的编辑页后重试",
+  "write.common.failed": "写入失败，宿主返回状态 {status}",
+  "write.common.bad_params.operation_mismatch": "写配置操作 \"{got}\" 与本动作 \"{want}\" 不符",
+  "write.create.max_affected_rows_out_of_range": "行数阈值 max_affected_rows 必须是 ≥0 的整数（0 或留空表示不限制）",
+  "write.update.max_affected_rows_out_of_range": "行数阈值 max_affected_rows 必须是 ≥0 的整数（0 或留空表示不限制）",
+  "write.delete.max_affected_rows_out_of_range": "行数阈值 max_affected_rows 必须是 ≥0 的整数（0 或留空表示不限制）",
+  "write.common.bad_params.write_v4_missing": "缺少 V4 写配置（旧配置已退役，请重新配置）",
+  "write.common.validate.legacy_retired": "写动作旧配置（expression）已退役，请重新配置写入规则"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kimpo Record Controllers Configuration",
+  "type": "object",
+  "properties": {
+    "extraction_detail_write_chunk_size": {
+      "type": "integer",
+      "title": "Detail write chunk size",
+      "description": "Max number of field-write entries (one per non-empty field per row, not whole rows) flushed per batch by the extract action. 0 = never chunk: accumulate all and flush once at the end. Writes are non-atomic; on a mid-flush failure earlier rows may already be persisted.",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 10000
+    }
+  }
+}

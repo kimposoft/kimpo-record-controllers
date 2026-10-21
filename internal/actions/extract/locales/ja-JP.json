@@ -1,0 +1,10 @@
+{
+  "extract.public_schema.raw_node_retired": "自由テキスト式（kind=raw）は廃止されました。構造化式で再設定してください",
+  "extract.public_schema.inline_post_sort_retired": "インライン実行後ソートは廃止されました。独立したソートアクションを使用してください",
+  "extract.public_schema.take_v1_retired": "take-v1 の旧セレクターは廃止されました。行数の制限には取得ノードの limit/order_by を使用してください",
+  "extract.public_schema.kimpo_sql_retired": "旧 KimpoSQL 形式は廃止されました。構造化式を使用してください",
+  "extract.public_schema.expression_legacy_retired": "旧形式のデータ取得設定（V3.4 式）は停止されました。アクションデザイナーでこのデータ取得ノードを再設定してください",
+  "extract.host_handled_only": "データ取得はホストで一括実行されるようになったため、このプラグインを直接呼び出すことはできません。このエラーが表示された場合は、管理者に実行ルートの確認を依頼してください",
+  "extract.validate.extract_v4_schema_version_mismatch": "データ取得ノードのドキュメントバージョンが一致しません。デザイナーで再設定してから保存してください",
+  "extract.validate.extract_v4_plans_shape_invalid": "extract_v4_plans の形式が正しくありません（オブジェクト配列である必要があります）。このテンプレートバージョンを再公開してください"
+}

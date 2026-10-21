@@ -1,0 +1,1 @@
+{"additionalProperties":false,"properties":{"max_affected_rows":{"minimum":0,"type":"number"},"write_v4":{"description":"写节点文档 v4","type":"object"}},"required":["write_v4"],"type":"object","x-editor":"write-v4","x-tabs":[{"key":"write","label":"写入","primary":true},{"key":"options","label":"选项","options":true}],"x-write-operation":"update"}
